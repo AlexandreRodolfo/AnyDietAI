@@ -12,3 +12,5 @@ Then, execute the file with the home page:
 ```streamlit run login.py```
 
 You will need two tokens: one from <a href="https://huggingface.co/">HuggingFace</a> to use the all-MiniLM-L6-v2 embeddings model, and another from <a href="https://console.groq.com/keys">Groq Cloud</a> to make requests to Llama-3-8b.
+
+If you don't want to run it locally, it's also available on <a href="https://anydietai.streamlit.app/">Streamlit Cloud</a>
