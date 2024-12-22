@@ -1,5 +1,7 @@
 # AnyDietAI
-Neural Networks Project to suggest healthier meals to users
+This is a project for the Neural Networks discipline designed to suggest healthier meals to users, primarily in Portuguese. The application leverages the <a href="https://www.kaggle.com/datasets/shrutisaxena/food-nutrition-dataset">Food Nutrition Dataset</a> to tailor meal suggestions based on user descriptions, dietary preferences, and any food restrictions related to conditions like diabetes, hypertension, or celiac disease. Each food nutrient (carbohydrate, protein, fat, vitamins, etc.) is scored on a scale from -1 (completely avoid) to 1 (strongly recommended), ensuring the recommendations align with the user's health needs.
+
+Foods in the dataset are ranked based on their nutritional profiles and organized using a Kohonen map (SOM). When the user specifies what they'd like to eat, the system uses embeddings to identify the closest matching foods in the dataset. It then suggests healthier alternatives by selecting foods near the user's choice on the SOM projection, ensuring they are nutritionally similar but better aligned with the user's health goals. Finally, an LLM generates a meal plan incorporating these healthier options.
 
 To run the project, first install the dependencies:
 
